@@ -1,0 +1,19 @@
+<header>
+    <nav class="header-nav">
+        <div class="nav-items">
+          <div class="header-nav--item" ><a routerLink="/home">Home</a> </div>
+          <div class="header-nav--item" ><a routerLink="/blog">Blog</a> </div>
+          <div class="header-nav--item" ><a routerLink="/contact">Contact</a> </div>
+        </div>
+        <ng-container  *ngIf=" isUserLoggedIn">
+          <div class="nav-items">
+            <div class="header-nav--item" ><a routerLink="/profile">Profile</a> </div>
+            <div class="header-nav--item" ><a routerLink='' (click)="logout()">Log out</a> </div>
+          </div>
+        </ng-container>
+        <div class="header-nav--item" *ngIf="!isUserLoggedIn"><a routerLink="/login">Log in</a> </div>
+    </nav>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>

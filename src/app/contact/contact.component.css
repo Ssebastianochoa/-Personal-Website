@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+  font-size: 16px;
+  font-family: 'Roboto', 'Poppins';
+}
+.principal-container--contact{
+    background-image: url('/assets/logos/contact-fondo.jpg');
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.target-contact--info {
+    width: 400px;
+    height: 600px;
+    background-color: var(--header-color);
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px black;
+}
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+.target-cpontainer--img {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    box-shadow: 5px 5px 15px;
+}
+.logo-info {
+    font-size: 25px;
+    margin: 10px 15px;
+    color: var(--dark-blue);
+}
+.target-container--ubi p {
+    font-size: 15px;
+    margin-right: 10px;
+}
+

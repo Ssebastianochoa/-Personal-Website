@@ -1,0 +1,52 @@
+<div class="principal-login">
+    <div class="login">
+        <div style="width: 300px;">
+            <button type="submit" class="gmail-google">
+                <span id="icon-google"></span>
+                <span class="continue"> Ingresar con Google</span>
+            </button>
+            <button type="submit" class="gmail-facebook">
+                <span id="icon-facebook"></span>
+                <span class="continue"> Ingresar con Facebook</span>
+            </button>
+        </div>
+        <div class="line">
+            <span>o</span>
+        </div>
+        <div class="form-container">
+            <form [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="form">
+
+                <p *ngIf="loginError" class="error-mesage">Usuario o contraseña incorrecto</p>
+
+                <label for="email" class="label">Dirección email</label>
+                <input [(ngModel)]="email" formControlName="email" type="text" id="email" placeholder="Sebastián Ochoa" class="input input-email" >
+
+                <div *ngIf="formLogin.get('email')?.invalid && 
+                (formLogin.get('email')?.dirty || formLogin.get('email')?.touched)
+                "
+                class="required"
+                >
+                    <div *ngIf="formLogin.get('email')?.errors?.['required']" class="m-0 p-0">
+                     El email es requerido.
+                    </div>
+                </div>
+
+                <label for="password" class="label">Contraseña</label>
+                <input [(ngModel)]="password" formControlName="password" type="password" placeholder="************" name="password" class="input input-email">
+
+                <div *ngIf="formLogin.get('password')?.invalid && 
+                    (formLogin.get('password')?.dirty || formLogin.get('password')?.touched)
+                "
+                class="required"
+                >
+                    <div *ngIf="formLogin.get('password')?.errors?.['required']" class="m-0 p-0">
+                       La contraseña es requerida.
+                    </div>
+                </div>
+
+                <button (click)="login()" class="primary-button ">Log in</button>
+
+            </form>
+        </div>
+     </div>
+</div>

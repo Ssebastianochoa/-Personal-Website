@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', 'Poppins';
+}
+:root {
+    --color-blue: #0791e6;
+    --white-input: #F7F7F7;
+    --header-color: #f2f2f2;  
+    --dark-blue: #202e95; 
+    --sm: 14px;
+    --md: 1rem;
+    --lg: 1.5rem;
+}

@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+  font-size: 16px;
+  font-family: 'Roboto', 'Poppins';
+}
+.principal-container {
+  display: flex;
+ 
+}
+.principal-container--horizontal {
+    width: 100%;
+    height: 150px;
+    background-color: #ebcbbb;
+    text-align: end;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-right: 421px;
+}
+  
+.principal-container--vertical{
+    background-color: #c2deff;
+    left: 105px;
+    width: 330px;
+    text-align: center;
+    z-index: 1;
+    margin-left: 80px;
+}
+.principal-container--photo {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border: 5px solid white;
+}
+.description {
+  text-align: justify;
+  margin: 20px 25px;
+  font-size: var(--md);
+  font-weight: 500;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 30px;
+}
+.title p{
+  font-size: 23px;
+}
+.logo-education {
+  color: #202e95;
+}
+.education {
+  margin-top: 220px;
+  margin-left: 79px;
+}
+.education h3 {
+  margin-bottom: 20px;
+}
+.education--items h4 {
+  margin-bottom: 12px;
+}
+.education--items p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+  
