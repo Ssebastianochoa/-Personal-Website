@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -7,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+  constructor(private router: Router) {}
+
+
   isUserLoggedIn: boolean = false;
 
   ngOnInit(): void {
     this.isUserLoggedIn = this.isLoggedIn();
-    
+    if (this.router.url === '/') {
+      this.router.navigate(['/home']);
+    }
   }
 
   isLoggedIn(){

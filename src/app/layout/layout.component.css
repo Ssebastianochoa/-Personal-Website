@@ -44,3 +44,28 @@ header,
     color: #202e95;
     font-weight: bold;
 }
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/logos/fondoapp.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container--target {
+    background-color: var(--header-color);
+    height: 420px;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px black;
+
+}
+.main-container--imagen {
+    width: 230px;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    
+}

@@ -39,13 +39,13 @@ const routes: Routes = [
     ]
   },
   {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
-  {
     path: '**',
     component: PageNotFoundComponent,
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/home'
   }
 ];
 

@@ -42,7 +42,8 @@ html {
 }
 .label {
   font-size: var(--sm);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  font-weight: bold;
   font-family: 'Roboto';
 }
 .gmail-google {
